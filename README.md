@@ -1,4 +1,4 @@
-# Aas
+# Aas [![Build Status](https://travis-ci.org/johnnyt/aas.png)](https://travis-ci.org/johnnyt/aas)
 
 ... as a service
 
