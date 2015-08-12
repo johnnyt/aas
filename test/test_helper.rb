@@ -1,4 +1,10 @@
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'aas'
+require "rubygems"
+require "bundler/setup"
+require "aas"
+require "minitest/autorun"
+require "minitest/reporters"
 
-require 'minitest/autorun'
+require "stringio"
+require "pathname"
+
+Minitest::Reporters.use!
