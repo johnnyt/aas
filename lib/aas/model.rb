@@ -1,5 +1,3 @@
-require 'set'
-
 module Aas
   module Model
     def self.included base
@@ -18,8 +16,16 @@ module Aas
       end
     end
 
+    def id= new_id
+      @id = new_id if @id.nil?
+    end
+
+    def new_record?
+      id.nil?
+    end
+
     def persisted?
-      !id.nil?
+      !new_record?
     end
 
     def touch
